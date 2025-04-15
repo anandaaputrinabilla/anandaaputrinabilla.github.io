@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-    <!-- Link ke file CSS yang sudah di-compile, bukan SCSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/main.css">  <!-- Perbaikan path -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
 <body>
     {% include navigation.html %}
