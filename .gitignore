@@ -1,0 +1,20 @@
+# Folder hasil build Jekyll, jangan ikut ke repo
+_site/
+
+# Folder bundler gems
+.bundle/
+
+# Folder vendor gems
+vendor/bundle/
+
+# File sistem macOS
+.DS_Store
+
+# File sistem Windows
+Thumbs.db
+
+# File log
+*.log
+
+# Folder temporary
+tmp/
