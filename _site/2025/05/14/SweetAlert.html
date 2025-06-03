@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SweetAlert</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScripst -->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!-- plugins -->
+     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="home" />
+     <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SweetAlert | home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="SweetAlert" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang SweetAlert" />
+<meta property="og:description" content="Penjelasan tentang SweetAlert" />
+<link rel="canonical" href="http://localhost:4000/2025/05/14/SweetAlert.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/14/SweetAlert.html" />
+<meta property="og:site_name" content="home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-14T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SweetAlert" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-14T00:00:00+07:00","datePublished":"2025-05-14T00:00:00+07:00","description":"Penjelasan tentang SweetAlert","headline":"SweetAlert","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/14/SweetAlert.html"},"url":"http://localhost:4000/2025/05/14/SweetAlert.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+<body>
+<div class="container   ">
+            <header>
+                <img src="/assets/images/cutee.jpg" alt="profile picture"
+                class="profile-picture">
+                        <h1>home</h1>
+                        <p></p>
+                    </header>
+                    <nav>
+                         <nav>
+ 
+ <a href="/" >home</a>
+ 
+ <a href="/friends.html" >friends</a>
+ 
+ <a href="/blog.html" >blog</a>
+ 
+</nav>
+                    </nav>
+                 
+                    <main>
+                         <h1>SweetAlert</h1>
+<p>14 May 2025 - </p>
+
+<p>Penjelasan tentang SweetAlert</p>
+
+<h2><img src="/assets/images/htmlgambar.png" alt="SweetAlert" /></h2>
+
+<h1 id="1-apa-itu-sweetalert">1. <strong>Apa itu SweetAlert?</strong></h1>
+
+<p>SweetAlert adalah pustaka JavaScript yang digunakan untuk menampilkan popup atau alert dengan tampilan yang lebih menarik dan interaktif dibandingkan alert bawaan browser.</p>
+
+<h2 id="11-fungsi-utama-sweetalert">1.1. <strong>Fungsi Utama SweetAlert</strong></h2>
+
+<ul>
+  <li>Menampilkan pesan konfirmasi atau notifikasi dengan desain yang bagus.</li>
+  <li>Mendukung berbagai jenis ikon: success, error, warning, info, question.</li>
+  <li>Bisa dikustomisasi dengan tombol, animasi, dan input.</li>
+</ul>
+
+<hr />
+
+<h1 id="2-cara-menggunakan-sweetalert">2. <strong>Cara Menggunakan SweetAlert</strong></h1>
+
+<h2 id="21-menambahkan-sweetalert-ke-proyek">2.1. <strong>Menambahkan SweetAlert ke Proyek</strong></h2>
+
+<p>Tambahkan script berikut di bagian <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> atau sebelum <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/sweetalert2@11"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h2 id="22-contoh-penggunaan-dasar">2.2. <strong>Contoh Penggunaan Dasar</strong></h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+  <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello World!</span><span class="dl">'</span><span class="p">);</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<h2 id="23-dengan-judul-teks-dan-ikon">2.3. <strong>Dengan Judul, Teks, dan Ikon</strong></h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+  <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+    <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Berhasil!</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Data telah disimpan.</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">icon</span><span class="p">:</span> <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">confirmButtonText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Oke</span><span class="dl">'</span>
+  <span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="3-contoh-konfirmasi-aksi">3. <strong>Contoh Konfirmasi Aksi</strong></h1>
+
+<p>Misalnya ingin konfirmasi sebelum menghapus data:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+  <span class="kd">function</span> <span class="nf">hapusData</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+      <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Yakin ingin menghapus?</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Data yang sudah dihapus tidak bisa dikembalikan!</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">icon</span><span class="p">:</span> <span class="dl">'</span><span class="s1">warning</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">showCancelButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="na">confirmButtonColor</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#3085d6</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">cancelButtonColor</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#d33</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">confirmButtonText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Ya, hapus!</span><span class="dl">'</span>
+    <span class="p">}).</span><span class="nf">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">if </span><span class="p">(</span><span class="nx">result</span><span class="p">.</span><span class="nx">isConfirmed</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">(</span>
+          <span class="dl">'</span><span class="s1">Terhapus!</span><span class="dl">'</span><span class="p">,</span>
+          <span class="dl">'</span><span class="s1">Data telah berhasil dihapus.</span><span class="dl">'</span><span class="p">,</span>
+          <span class="dl">'</span><span class="s1">success</span><span class="dl">'</span>
+        <span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="4-kustomisasi-lanjutan">4. <strong>Kustomisasi Lanjutan</strong></h1>
+
+<p>SweetAlert bisa dikustomisasi:</p>
+
+<ul>
+  <li><strong>Timer otomatis tertutup:</strong></li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Auto close!</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">text</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Akan tertutup dalam 2 detik.</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">timer</span><span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
+  <span class="na">showConfirmButton</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong>Dengan input form:</strong></li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Swal</span><span class="p">.</span><span class="nf">fire</span><span class="p">({</span>
+  <span class="na">title</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Masukkan nama</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">input</span><span class="p">:</span> <span class="dl">'</span><span class="s1">text</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">showCancelButton</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">inputPlaceholder</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Nama kamu</span><span class="dl">'</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="5-kesimpulan">5. <strong>Kesimpulan</strong></h1>
+
+<ul>
+  <li>SweetAlert adalah alternatif modern dari <code class="language-plaintext highlighter-rouge">alert()</code>.</li>
+  <li>Memberikan tampilan yang lebih interaktif dan profesional.</li>
+  <li>Mudah digunakan hanya dengan beberapa baris JavaScript.</li>
+  <li>Cocok digunakan untuk notifikasi, konfirmasi, hingga input pengguna.</li>
+</ul>
+
+<p>Dengan menggunakan SweetAlert, pengalaman pengguna di web akan menjadi jauh lebih baik dan menarik.</p>
+
+<p>```</p>
+
+                    </main>
+
+                    <footer>
+                        <p>&copy; 2025 home. All rights reserved.</p>
+                    </footer>
+            </div>
+</body>
+</html>

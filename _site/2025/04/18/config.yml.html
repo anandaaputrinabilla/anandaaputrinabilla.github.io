@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mengenal config.yml</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+    <!-- JavaScripst -->
+    <script src="/assets/js/scripts.js"></script>
+
+    <!-- plugins -->
+     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="home" />
+     <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Mengenal config.yml | home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Mengenal config.yml" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang config.yml" />
+<meta property="og:description" content="penjelasan tentang config.yml" />
+<link rel="canonical" href="http://localhost:4000/2025/04/18/config.yml.html" />
+<meta property="og:url" content="http://localhost:4000/2025/04/18/config.yml.html" />
+<meta property="og:site_name" content="home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-18T00:00:00+07:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mengenal config.yml" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-18T00:00:00+07:00","datePublished":"2025-04-18T00:00:00+07:00","description":"penjelasan tentang config.yml","headline":"Mengenal config.yml","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/18/config.yml.html"},"url":"http://localhost:4000/2025/04/18/config.yml.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+<body>
+<div class="container   ">
+            <header>
+                <img src="/assets/images/cutee.jpg" alt="profile picture"
+                class="profile-picture">
+                        <h1>home</h1>
+                        <p></p>
+                    </header>
+                    <nav>
+                         <nav>
+ 
+ <a href="/" >home</a>
+ 
+ <a href="/friends.html" >friends</a>
+ 
+ <a href="/blog.html" >blog</a>
+ 
+</nav>
+                    </nav>
+                 
+                    <main>
+                         <h1>Mengenal config.yml</h1>
+<p>18 Apr 2025 - </p>
+
+<p>penjelasan tentang config.yml</p>
+
+<p><img src="/assets/images/htmlgambar.png" alt="config.yml" /></p>
+
+<hr />
+
+<h1 id="1-apa-itu-configyml">1. <strong>Apa itu config.yml?</strong></h1>
+
+<p><code class="language-plaintext highlighter-rouge">config.yml</code> adalah file konfigurasi berbasis YAML (YAML Ain’t Markup Language) yang digunakan untuk menyimpan pengaturan dalam berbagai aplikasi atau tools. File ini mudah dibaca oleh manusia dan sangat fleksibel.</p>
+
+<h2 id="11-fungsi-configyml">1.1. <strong>Fungsi config.yml</strong></h2>
+
+<p>Beberapa kegunaan umum <code class="language-plaintext highlighter-rouge">config.yml</code> antara lain:</p>
+
+<ul>
+  <li>Menyimpan pengaturan situs web (misalnya Jekyll).</li>
+  <li>Mengatur alur kerja otomatis seperti di GitHub Actions.</li>
+  <li>Menentukan proses build dan deployment dalam CI/CD.</li>
+</ul>
+
+<h2 id="12-format-dasar-yaml">1.2. <strong>Format Dasar YAML</strong></h2>
+
+<p>YAML menggunakan format indentasi berbasis spasi (bukan tab). Berikut adalah contoh format dasarnya:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">Contoh Blog</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">user</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">web</span>
+  <span class="pi">-</span> <span class="s">pemrograman</span>
+<span class="na">pengaturan</span><span class="pi">:</span>
+  <span class="na">tema</span><span class="pi">:</span> <span class="s">minima</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://contoh.com"</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="2-contoh-configyml-pada-jekyll">2. <strong>Contoh config.yml pada Jekyll</strong></h1>
+
+<p>Jekyll adalah static site generator yang menggunakan <code class="language-plaintext highlighter-rouge">config.yml</code> untuk pengaturannya.</p>
+
+<h2 id="21-struktur-dasar-configyml-jekyll">2.1. <strong>Struktur Dasar config.yml Jekyll</strong></h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Blog</span><span class="nv"> </span><span class="s">Saya"</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Blog</span><span class="nv"> </span><span class="s">pribadi</span><span class="nv"> </span><span class="s">tentang</span><span class="nv"> </span><span class="s">teknologi"</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Nama</span><span class="nv"> </span><span class="s">Saya"</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> 
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://namasaya.github.io"</span>
+</code></pre></div></div>
+
+<h2 id="22-menambahkan-sosial-media">2.2. <strong>Menambahkan Sosial Media</strong></h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">social_links</span><span class="pi">:</span>
+  <span class="na">github</span><span class="pi">:</span> <span class="s">https://github.com/namasaya</span>
+  <span class="na">twitter</span><span class="pi">:</span> <span class="s">https://twitter.com/namasaya</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="3-contoh-configyml-pada-github-actions">3. <strong>Contoh config.yml pada GitHub Actions</strong></h1>
+
+<p>GitHub Actions menggunakan file <code class="language-plaintext highlighter-rouge">.yml</code> untuk menentukan workflow otomatis seperti deploy atau testing.</p>
+
+<h2 id="31-contoh-workflow-deploy">3.1. <strong>Contoh Workflow Deploy</strong></h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Deploy ke GitHub Pages</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Install Dependencies</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">npm install</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Build</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">npm run build</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Deploy</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="s">npm run deploy</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="4-contoh-configyml-untuk-cicd">4. <strong>Contoh config.yml untuk CI/CD</strong></h1>
+
+<p>CI/CD tools seperti CircleCI atau TravisCI juga menggunakan <code class="language-plaintext highlighter-rouge">config.yml</code>.</p>
+
+<h2 id="41-contoh-configyml-circleci">4.1. <strong>Contoh config.yml CircleCI</strong></h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="m">2.1</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">build</span><span class="pi">:</span>
+    <span class="na">docker</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">image</span><span class="pi">:</span> <span class="s">cimg/node:16.13</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">checkout</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm install</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm run test</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="5-tips-menulis-configyml">5. <strong>Tips Menulis config.yml</strong></h1>
+
+<ul>
+  <li>Gunakan indentasi 2 spasi, <strong>jangan pakai tab</strong>.</li>
+  <li>Jangan ada spasi di sekitar tanda titik dua (<code class="language-plaintext highlighter-rouge">:</code>).</li>
+  <li>Selalu validasi file YAML Anda dengan tool seperti <a href="https://www.yamllint.com/">YAML Lint</a>.</li>
+  <li>Gunakan komentar dengan <code class="language-plaintext highlighter-rouge">#</code> untuk memberi catatan di file.</li>
+</ul>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Konfigurasi dasar</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Situs</span><span class="nv"> </span><span class="s">Saya"</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="6-kesimpulan">6. <strong>Kesimpulan</strong></h1>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">config.yml</code> adalah file konfigurasi yang umum digunakan di banyak platform dan tools modern.</li>
+  <li>File ini berformat YAML yang sederhana dan mudah dibaca.</li>
+  <li><code class="language-plaintext highlighter-rouge">config.yml</code> digunakan dalam Jekyll, GitHub Actions, CI/CD tools, dan banyak lagi.</li>
+  <li>Pemahaman yang baik tentang <code class="language-plaintext highlighter-rouge">config.yml</code> sangat membantu dalam mengelola project dan otomatisasi.</li>
+</ul>
+
+<p>File kecil, tapi sangat penting. Kuasai <code class="language-plaintext highlighter-rouge">config.yml</code>, dan workflow Anda akan lebih tertata dan efisien.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+                    </main>
+
+                    <footer>
+                        <p>&copy; 2025 home. All rights reserved.</p>
+                    </footer>
+            </div>
+</body>
+</html>
