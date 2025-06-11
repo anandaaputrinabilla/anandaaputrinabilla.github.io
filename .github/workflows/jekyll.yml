@@ -2,7 +2,7 @@ name: Build and Deploy Jekyll Site to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # Ganti 'main' sesuai branch utama kamu
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -15,13 +15,15 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'  # Sesuaikan jika kamu pakai versi Ruby lain
+          ruby-version: '3.2' # Pastikan ini sama dengan Gemfile.lock
           bundler-cache: true
 
       - name: Install dependencies
         run: bundle install
 
       - name: Build Jekyll site
+        env:
+          JEKYLL_ENV: production
         run: bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
