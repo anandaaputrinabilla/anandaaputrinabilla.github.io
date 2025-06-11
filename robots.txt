@@ -1,1 +1,1 @@
-Sitemap: https://anandaaputrinabilla.github.io/sitemap.xml
+Sitemap: anandaaputrinabilla.github.io/sitemap.xml
