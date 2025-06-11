@@ -1,6 +1,6 @@
 title: home
 baseurl: ""  # Karena ini repo user page (bukan project page), baseurl harus kosong
-url: "https://anandaaputrinabilla.github.io"
+url: "anandaaputrinabilla.github.io"
 
 sass:
   sass_dir: _sass
