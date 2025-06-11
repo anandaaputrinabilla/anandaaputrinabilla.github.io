@@ -3,8 +3,10 @@ baseurl: ""  # Karena ini repo user page (bukan project page), baseurl harus kos
 url: "anandaaputrinabilla.github.io"
 
 sass:
-  sass_dir: _sass
   style: compressed
+include:
+  - assets
+
 
 theme: null
 
