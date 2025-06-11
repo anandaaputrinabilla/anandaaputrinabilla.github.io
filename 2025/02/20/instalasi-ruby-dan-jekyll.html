@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menginstall Ruby dan Jekyll</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Menginstall Ruby dan Jekyll | home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Menginstall Ruby dan Jekyll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang instalasi Ruby dan Jekyll" />
+<meta property="og:description" content="penjelasan tentang instalasi Ruby dan Jekyll" />
+<link rel="canonical" href="https://anandaaputrinabilla.github.io/2025/02/20/instalasi-ruby-dan-jekyll.html" />
+<meta property="og:url" content="https://anandaaputrinabilla.github.io/2025/02/20/instalasi-ruby-dan-jekyll.html" />
+<meta property="og:site_name" content="home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-02-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Menginstall Ruby dan Jekyll" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-02-20T00:00:00+00:00","datePublished":"2025-02-20T00:00:00+00:00","description":"penjelasan tentang instalasi Ruby dan Jekyll","headline":"Menginstall Ruby dan Jekyll","mainEntityOfPage":{"@type":"WebPage","@id":"https://anandaaputrinabilla.github.io/2025/02/20/instalasi-ruby-dan-jekyll.html"},"url":"https://anandaaputrinabilla.github.io/2025/02/20/instalasi-ruby-dan-jekyll.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/cutee.jpg" alt="profile picture" class="profile-picture">
+      <h1>home</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <nav>
+ 
+ <a href="/" >home</a>
+ 
+ <a href="/friends.html" >friends</a>
+ 
+ <a href="/blog.html" >blog</a>
+ 
+</nav>
+    </nav>
+
+    <main>
+      <h1>Menginstall Ruby dan Jekyll</h1>
+<p>20 Feb 2025 - </p>
+
+<p>penjelasan tentang instalasi Ruby dan Jekyll</p>
+
+<p><img src="/assets/images/htmlgambar.png" alt="HTML link dan list" /></p>
+
+<hr />
+
+<h1 id="1-instalasi-ruby">1. <strong>Instalasi Ruby</strong></h1>
+
+<p><strong>Ruby</strong> adalah bahasa pemrograman yang dinamis dan berorientasi objek. Untuk mengembangkan situs dengan <strong>Jekyll</strong>, Anda memerlukan Ruby sebagai bagian dari persyaratan instalasi.</p>
+
+<h2 id="11-langkah-langkah-instalasi-ruby">1.1. <strong>Langkah-langkah Instalasi Ruby</strong></h2>
+
+<h3 id="a-cek-apakah-ruby-sudah-terinstal"><strong>A. Cek apakah Ruby sudah terinstal</strong></h3>
+<p>Sebelum melakukan instalasi, pastikan Ruby belum terinstal pada sistem Anda. Anda dapat memeriksa dengan perintah berikut di terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>Jika Ruby sudah terinstal, Anda akan melihat versi Ruby yang terpasang. Jika tidak, Anda akan melihat pesan kesalahan.</p>
+
+<h3 id="b-instalasi-ruby-di-macos"><strong>B. Instalasi Ruby di macOS</strong></h3>
+
+<p>Di macOS, Ruby sudah terinstal secara default, tetapi mungkin perlu diperbarui ke versi terbaru. Berikut adalah cara memperbarui Ruby atau menginstalnya jika belum ada:</p>
+
+<ol>
+  <li>
+    <p><strong>Menggunakan Homebrew (Manajer Paket untuk macOS)</strong></p>
+
+    <p>Jika Anda belum memiliki <strong>Homebrew</strong>, Anda dapat menginstalnya dengan menjalankan perintah berikut di terminal:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div>    </div>
+
+    <p>Setelah Homebrew terinstal, Anda dapat menginstal Ruby dengan menjalankan perintah:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>ruby
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Menambahkan Ruby ke PATH</strong></p>
+
+    <p>Setelah instalasi selesai, Anda perlu menambahkan Ruby ke PATH agar sistem mengenali perintah Ruby. Tambahkan baris berikut ke file <code class="language-plaintext highlighter-rouge">~/.zshrc</code> atau <code class="language-plaintext highlighter-rouge">~/.bash_profile</code> (tergantung pada shell yang Anda gunakan):</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/usr/local/opt/ruby/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre></div>    </div>
+
+    <p>Setelah itu, jalankan perintah berikut untuk memuat ulang konfigurasi shell:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.zshrc   <span class="c"># Untuk pengguna zsh</span>
+<span class="c"># atau</span>
+<span class="nb">source</span> ~/.bash_profile  <span class="c"># Untuk pengguna bash</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Verifikasi Instalasi Ruby</strong></p>
+
+    <p>Cek versi Ruby setelah menginstalnya dengan menjalankan:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="c-instalasi-ruby-di-windows"><strong>C. Instalasi Ruby di Windows</strong></h3>
+
+<p>Untuk Windows, Anda dapat menginstal Ruby menggunakan <strong>RubyInstaller</strong>:</p>
+
+<ol>
+  <li>Kunjungi <a href="https://rubyinstaller.org/downloads/">halaman unduhan RubyInstaller</a>.</li>
+  <li>Pilih versi Ruby yang sesuai dengan sistem operasi Anda (misalnya, versi 64-bit).</li>
+  <li>Unduh dan jalankan penginstal.</li>
+  <li>Selama proses instalasi, pastikan untuk mencentang opsi “Add Ruby executables to your PATH”.</li>
+  <li>
+    <p>Setelah instalasi selesai, buka <strong>Command Prompt</strong> dan verifikasi instalasi Ruby dengan perintah:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="d-instalasi-ruby-di-linux-ubuntudebian"><strong>D. Instalasi Ruby di Linux (Ubuntu/Debian)</strong></h3>
+
+<p>Di sistem berbasis Debian/Ubuntu, Anda bisa menginstal Ruby menggunakan perintah berikut:</p>
+
+<ol>
+  <li>
+    <p>Perbarui daftar paket:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Instal Ruby:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ruby-full
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Verifikasi instalasi:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby <span class="nt">-v</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="2-instalasi-jekyll">2. <strong>Instalasi Jekyll</strong></h1>
+
+<p><strong>Jekyll</strong> adalah pembuat situs statis yang menggunakan Ruby. Setelah Ruby terinstal, Anda bisa melanjutkan dengan menginstal Jekyll.</p>
+
+<h2 id="21-langkah-langkah-instalasi-jekyll">2.1. <strong>Langkah-langkah Instalasi Jekyll</strong></h2>
+
+<h3 id="a-instalasi-jekyll-menggunakan-gem"><strong>A. Instalasi Jekyll Menggunakan Gem</strong></h3>
+
+<p>Jekyll diinstal melalui <strong>RubyGems</strong>, manajer paket Ruby. Untuk menginstalnya, jalankan perintah berikut di terminal atau command prompt:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">jekyll</code></strong>: Ini adalah alat untuk membuat situs statis.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">bundler</code></strong>: Digunakan untuk mengelola dependensi Ruby dalam proyek.</li>
+</ul>
+
+<p>Jika instalasi berhasil, Anda bisa memverifikasi instalasi Jekyll dengan menjalankan:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>Ini akan menampilkan versi Jekyll yang terinstal.</p>
+
+<h3 id="b-mengatur-situs-jekyll-baru"><strong>B. Mengatur Situs Jekyll Baru</strong></h3>
+
+<p>Setelah menginstal Jekyll, Anda dapat membuat situs baru dengan perintah berikut:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new my-site
+</code></pre></div></div>
+
+<p>Perintah ini akan membuat folder <code class="language-plaintext highlighter-rouge">my-site</code> dengan struktur dasar proyek Jekyll di dalamnya. Anda dapat mengganti <code class="language-plaintext highlighter-rouge">my-site</code> dengan nama proyek sesuai keinginan Anda.</p>
+
+<h3 id="c-menjalankan-server-jekyll"><strong>C. Menjalankan Server Jekyll</strong></h3>
+
+<p>Setelah situs baru dibuat, pindah ke direktori proyek yang baru saja Anda buat dan jalankan server lokal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>my-site
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>Perintah ini akan memulai server Jekyll dan Anda bisa mengakses situs Anda di browser dengan alamat:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://localhost:4000
+</code></pre></div></div>
+
+<h3 id="d-menyunting-situs-jekyll"><strong>D. Menyunting Situs Jekyll</strong></h3>
+
+<p>Setelah situs Jekyll berjalan, Anda dapat mulai mengedit konten di dalam folder proyek tersebut. File-file utama yang dapat Anda edit adalah:</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">_posts/</code></strong>: Tempat untuk menyimpan artikel blog (dengan format <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-nama-post.md</code>).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">_config.yml</code></strong>: File konfigurasi untuk pengaturan situs Jekyll (seperti nama situs, URL, dsb).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">index.md</code></strong> atau <strong><code class="language-plaintext highlighter-rouge">index.html</code></strong>: Halaman utama situs.</li>
+</ul>
+
+<p>Anda bisa menambahkan lebih banyak halaman, mengedit tema, dan mengubah tampilan situs sesuai kebutuhan.</p>
+
+<hr />
+
+<h1 id="3-menggunakan-bundler-untuk-manajemen-dependensi">3. <strong>Menggunakan Bundler untuk Manajemen Dependensi</strong></h1>
+
+<p>Dalam proyek Jekyll, sering kali Anda akan menggunakan Bundler untuk mengelola dependensi Ruby. Bundler memungkinkan Anda untuk mendefinisikan dan mengunci versi paket yang digunakan dalam proyek.</p>
+
+<h2 id="31-instalasi-bundler">3.1. <strong>Instalasi Bundler</strong></h2>
+
+<p>Jika Anda belum menginstal Bundler, lakukan dengan perintah berikut:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler
+</code></pre></div></div>
+
+<h2 id="32-menggunakan-bundler">3.2. <strong>Menggunakan Bundler</strong></h2>
+
+<ol>
+  <li>
+    <p>Setelah itu, buat file <code class="language-plaintext highlighter-rouge">Gemfile</code> di direktori proyek Jekyll, dengan isi seperti berikut:</p>
+
+    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">source</span> <span class="s1">'https://rubygems.org'</span>
+
+<span class="n">gem</span> <span class="s1">'jekyll'</span>
+<span class="n">gem</span> <span class="s1">'jekyll-feed'</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Jalankan perintah berikut untuk menginstal semua gem yang ada di <code class="language-plaintext highlighter-rouge">Gemfile</code>:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">install</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Setelah instalasi selesai, Anda dapat menjalankan Jekyll menggunakan Bundler:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="4-kesimpulan">4. <strong>Kesimpulan</strong></h1>
+
+<ul>
+  <li>
+    <p><strong>Instalasi Ruby</strong>: Ruby adalah bahasa pemrograman yang diperlukan untuk menjalankan Jekyll. Instalasi Ruby bervariasi tergantung pada sistem operasi (macOS, Windows, Linux), dan bisa dilakukan menggunakan manajer paket seperti Homebrew (macOS) atau RubyInstaller (Windows).</p>
+  </li>
+  <li>
+    <p><strong>Instalasi Jekyll</strong>: Setelah Ruby terinstal, Anda bisa menginstal Jekyll menggunakan RubyGems (<code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>). Setelah itu, Anda dapat membuat situs baru menggunakan <code class="language-plaintext highlighter-rouge">jekyll new</code>, menjalankan server lokal dengan <code class="language-plaintext highlighter-rouge">jekyll serve</code>, dan mulai mengembangkan situs atau blog statis.</p>
+  </li>
+  <li>
+    <p><strong>Bundler</strong>: Menggunakan Bundler membantu Anda mengelola dependensi proyek Ruby, termasuk Jekyll, dengan cara yang lebih terstruktur.</p>
+  </li>
+</ul>
+
+<p>Dengan mengikuti langkah-langkah di atas, Anda dapat menginstal Ruby, Jekyll, dan mengembangkan situs atau blog statis menggunakan Jekyll dengan mudah.</p>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 home. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

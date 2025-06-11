@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mengenal SCSS dan SASS</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Mengenal SCSS dan SASS | home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Mengenal SCSS dan SASS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang SCSS dan SASS" />
+<meta property="og:description" content="Penjelasan tentang SCSS dan SASS" />
+<link rel="canonical" href="https://anandaaputrinabilla.github.io/2025/05/07/SCSS-dan-SASS.html" />
+<meta property="og:url" content="https://anandaaputrinabilla.github.io/2025/05/07/SCSS-dan-SASS.html" />
+<meta property="og:site_name" content="home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-07T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Mengenal SCSS dan SASS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-07T00:00:00+00:00","datePublished":"2025-05-07T00:00:00+00:00","description":"Penjelasan tentang SCSS dan SASS","headline":"Mengenal SCSS dan SASS","mainEntityOfPage":{"@type":"WebPage","@id":"https://anandaaputrinabilla.github.io/2025/05/07/SCSS-dan-SASS.html"},"url":"https://anandaaputrinabilla.github.io/2025/05/07/SCSS-dan-SASS.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/cutee.jpg" alt="profile picture" class="profile-picture">
+      <h1>home</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <nav>
+ 
+ <a href="/" >home</a>
+ 
+ <a href="/friends.html" >friends</a>
+ 
+ <a href="/blog.html" >blog</a>
+ 
+</nav>
+    </nav>
+
+    <main>
+      <h1>Mengenal SCSS dan SASS</h1>
+<p>07 May 2025 - </p>
+
+<p>Penjelasan tentang SCSS dan SASS</p>
+
+<p><img src="/assets/images/htmlgambar.png" alt="scss dan sass" /></p>
+
+<hr />
+
+<h1 id="1-apa-itu-sass-dan-scss">1. <strong>Apa itu SASS dan SCSS?</strong></h1>
+
+<p><strong>SASS</strong> (Syntactically Awesome Stylesheets) adalah ekstensi dari CSS yang memungkinkan penulisan stylesheet yang lebih modular, fleksibel, dan dinamis. SCSS adalah sintaks yang lebih modern dari SASS yang sepenuhnya kompatibel dengan CSS.</p>
+
+<h2 id="11-perbedaan-sass-dan-scss">1.1. <strong>Perbedaan SASS dan SCSS</strong></h2>
+
+<ul>
+  <li><strong>SASS</strong> menggunakan indentasi untuk menentukan hierarki, tanpa menggunakan tanda kurung atau titik koma.</li>
+  <li><strong>SCSS</strong> menggunakan sintaks mirip CSS, yang berarti menggunakan kurung kurawal <code class="language-plaintext highlighter-rouge">{}</code> dan titik koma <code class="language-plaintext highlighter-rouge">;</code>.</li>
+</ul>
+
+<hr />
+
+<h1 id="2-keuntungan-menggunakan-sassscss">2. <strong>Keuntungan Menggunakan SASS/SCSS</strong></h1>
+
+<ul>
+  <li><strong>Variabel</strong>: Menyimpan nilai seperti warna, ukuran font, dll, untuk digunakan di seluruh file CSS.</li>
+  <li><strong>Nested Rules</strong>: Menulis CSS yang terstruktur dengan lebih mudah menggunakan indentasi.</li>
+  <li><strong>Partials</strong>: Memecah kode menjadi file kecil agar lebih mudah dikelola.</li>
+  <li><strong>Mixins</strong>: Menyusun kode CSS yang dapat digunakan kembali di beberapa tempat.</li>
+  <li><strong>Inheritance</strong>: Menggunakan aturan pewarisan untuk menghindari pengulangan kode.</li>
+</ul>
+
+<hr />
+
+<h1 id="3-contoh-penggunaan-scss">3. <strong>Contoh Penggunaan SCSS</strong></h1>
+
+<h2 id="31-penggunaan-variabel">3.1. <strong>Penggunaan Variabel</strong></h2>
+
+<p>Dengan SCSS, kamu bisa mendeklarasikan variabel untuk nilai yang sering digunakan.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+<span class="nv">$font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="32-nested-rules-aturan-bertingkat">3.2. <strong>Nested Rules (Aturan Bertingkat)</strong></h2>
+
+<p>SCSS memungkinkan penulisan aturan CSS yang lebih terstruktur dan lebih mudah dibaca.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">nav</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+  
+  <span class="nt">ul</span> <span class="p">{</span>
+    <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    
+    <span class="nt">li</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">inline</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">15px</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="33-mixins">3.3. <strong>Mixins</strong></h2>
+
+<p>Mixins memungkinkan kamu menulis ulang kode CSS yang dapat digunakan di beberapa tempat.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@mixin</span> <span class="nf">border-radius</span><span class="p">(</span><span class="nv">$radius</span><span class="p">)</span> <span class="p">{</span>
+  <span class="na">-webkit-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="na">-moz-border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$radius</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">border-radius</span><span class="p">(</span><span class="m">10px</span><span class="p">);</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="4-menggunakan-partials-di-scss">4. <strong>Menggunakan Partials di SCSS</strong></h1>
+
+<p>SCSS mendukung partials, yaitu file kecil yang dapat diimpor ke dalam file utama untuk memecah kode menjadi bagian-bagian yang lebih kecil dan mudah dikelola.</p>
+
+<h3 id="41-contoh-struktur-partials">4.1. <strong>Contoh Struktur Partials</strong></h3>
+
+<ol>
+  <li><strong>_variables.scss</strong> – Menyimpan semua variabel.</li>
+  <li><strong>_base.scss</strong> – Menyimpan aturan dasar seperti body, font, dll.</li>
+  <li><strong>_buttons.scss</strong> – Menyimpan aturan untuk tombol.</li>
+</ol>
+
+<h3 id="42-menggunakan-partials">4.2. <strong>Menggunakan Partials</strong></h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+<span class="nv">$font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+
+<span class="c1">// _base.scss</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nv">$font-size</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="mh">#f4f4f4</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// main.scss</span>
+<span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'base'</span><span class="p">;</span>
+
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="5-sass-vs-scss-mana-yang-lebih-baik">5. <strong>SASS vs SCSS: Mana yang Lebih Baik?</strong></h1>
+
+<ul>
+  <li><strong>SCSS</strong> lebih sering digunakan karena sintaksnya yang lebih mirip dengan CSS, sehingga lebih mudah dipahami oleh banyak orang, terutama mereka yang sudah familiar dengan CSS.</li>
+  <li><strong>SASS</strong> menawarkan sintaks yang lebih ringkas dan minimalis, yang disukai oleh beberapa pengembang untuk kode yang lebih bersih dan lebih cepat ditulis.</li>
+</ul>
+
+<hr />
+
+<h1 id="6-cara-mengkompilasi-scss-ke-css">6. <strong>Cara Mengkompilasi SCSS ke CSS</strong></h1>
+
+<p>Untuk menggunakan SCSS atau SASS, kamu perlu mengkompilasi file <code class="language-plaintext highlighter-rouge">.scss</code> atau <code class="language-plaintext highlighter-rouge">.sass</code> ke dalam file <code class="language-plaintext highlighter-rouge">.css</code>. Ini bisa dilakukan dengan berbagai alat, seperti:</p>
+
+<h2 id="61-menggunakan-nodejs-dan-npm">6.1. <strong>Menggunakan Node.js dan npm</strong></h2>
+
+<ol>
+  <li>Install package <code class="language-plaintext highlighter-rouge">sass</code> dengan npm:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> sass
+</code></pre></div></div>
+
+<ol>
+  <li>Mengkompilasi file SCSS:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sass styles.scss styles.css
+</code></pre></div></div>
+
+<p>Atau untuk mengkompilasi secara otomatis setiap kali file SCSS diubah:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sass <span class="nt">--watch</span> styles.scss:styles.css
+</code></pre></div></div>
+
+<h2 id="62-menggunakan-prepros">6.2. <strong>Menggunakan Prepros</strong></h2>
+
+<p>Prepros adalah aplikasi desktop yang memudahkan kompilasi SCSS dan SASS. Kamu cukup memilih file SCSS yang ingin dikompilasi, dan Prepros akan menangani semuanya secara otomatis.</p>
+
+<hr />
+
+<h1 id="7-tips-dan-best-practices">7. <strong>Tips dan Best Practices</strong></h1>
+
+<ul>
+  <li><strong>Gunakan Partials</strong>: Pecah kode SCSS menjadi file terpisah agar lebih mudah dikelola.</li>
+  <li><strong>Jangan Berlebihan dengan Nesting</strong>: Nesting terlalu dalam dapat memperumit kode dan menyebabkan masalah performa.</li>
+  <li><strong>Manfaatkan Mixins dan Functions</strong>: Untuk menghindari pengulangan kode dan meningkatkan maintainability.</li>
+  <li><strong>Minimalkan File SCSS</strong>: Gunakan kompresi untuk menghasilkan file CSS yang lebih kecil.</li>
+</ul>
+
+<hr />
+
+<h1 id="8-kesimpulan">8. <strong>Kesimpulan</strong></h1>
+
+<ul>
+  <li><strong>SASS</strong> dan <strong>SCSS</strong> adalah alat yang kuat untuk mempercepat pengembangan dan menulis CSS yang lebih dinamis.</li>
+  <li><strong>SCSS</strong> lebih populer dan lebih mirip dengan CSS, sementara <strong>SASS</strong> menawarkan sintaks yang lebih ringkas.</li>
+  <li>Dengan fitur seperti variabel, mixins, dan partials, SCSS membuat kode CSS lebih modular, mudah dibaca, dan dapat dipelihara.</li>
+</ul>
+
+<p>Mulailah menggunakan SCSS atau SASS di proyekmu dan rasakan kemudahan serta fleksibilitas yang ditawarkannya!</p>
+
+<p>```</p>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 home. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
