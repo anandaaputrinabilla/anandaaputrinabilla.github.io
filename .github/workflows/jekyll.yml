@@ -15,7 +15,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'  # Sesuaikan jika kamu pakai versi Ruby lain
+          ruby-version: '3.2'  # Sesuaikan jika kamu pakai versi Ruby lain
           bundler-cache: true
 
       - name: Install dependencies
