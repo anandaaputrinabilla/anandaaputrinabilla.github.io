@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-03T15:27:28+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">home</title><entry><title type="html">Formspree</title><link href="http://localhost:4000/2025/05/14/Formspree.html" rel="alternate" type="text/html" title="Formspree" /><published>2025-05-14T00:00:00+07:00</published><updated>2025-05-14T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/14/Formspree</id><content type="html" xml:base="http://localhost:4000/2025/05/14/Formspree.html"><![CDATA[<p>Penjelasan tentang Formspree</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-11T14:50:32+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">home</title><entry><title type="html">Formspree</title><link href="http://localhost:4000/2025/05/14/Formspree.html" rel="alternate" type="text/html" title="Formspree" /><published>2025-05-14T00:00:00+07:00</published><updated>2025-05-14T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/14/Formspree</id><content type="html" xml:base="http://localhost:4000/2025/05/14/Formspree.html"><![CDATA[<p>Penjelasan tentang Formspree</p>
 
 <h2><img src="/assets/images/htmlgambar.png" alt="Formspree" /></h2>
 
@@ -266,7 +266,7 @@
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
   <span class="nt">body</span> <span class="p">{</span>
-    <span class="nl">background-color</span><span class="p">:</span> <span class="no">lightblue</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nx">lightblue</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -500,7 +500,7 @@
 
 <span class="nt">button</span> <span class="p">{</span>
   <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
-  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -1327,9 +1327,9 @@
   <li>
     <p><strong>Responsive Layout</strong>: Desain yang berubah responsif sesuai dengan ukuran layar perangkat (desktop, tablet, smartphone). Hal ini dapat dicapai dengan menggunakan <strong>CSS Media Queries</strong>.</p>
 
-    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">only</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="n">only</span> <span class="nb">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
   <span class="nc">.container</span> <span class="p">{</span>
-    <span class="nl">flex-direction</span><span class="p">:</span> <span class="n">column</span><span class="p">;</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">column</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>    </div>
@@ -1338,8 +1338,8 @@
     <p><strong>Layout Grid</strong>: Menggunakan <strong>CSS Grid</strong> atau <strong>Flexbox</strong> untuk membuat desain fleksibel yang mengatur elemen-elemen dalam baris dan kolom yang dapat dengan mudah diubah dan disesuaikan.</p>
 
     <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.container</span> <span class="p">{</span>
-  <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
-  <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span> <span class="m">3</span><span class="n">fr</span><span class="p">;</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="m">1fr</span> <span class="m">3fr</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>    </div>
   </li>
