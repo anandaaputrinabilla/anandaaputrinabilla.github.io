@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laravel</title>
+
+  <!-- Stylesheet -->
+  <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+   <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+   <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Laravel | home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Laravel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang Laravel" />
+<meta property="og:description" content="Penjelasan tentang Laravel" />
+<link rel="canonical" href="anandaaputrinabilla.github.io/2025/06/25/laravel.html" />
+<meta property="og:url" content="anandaaputrinabilla.github.io/2025/06/25/laravel.html" />
+<meta property="og:site_name" content="home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-25T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Laravel" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-25T00:00:00+00:00","datePublished":"2025-06-25T00:00:00+00:00","description":"Penjelasan tentang Laravel","headline":"Laravel","mainEntityOfPage":{"@type":"WebPage","@id":"anandaaputrinabilla.github.io/2025/06/25/laravel.html"},"url":"anandaaputrinabilla.github.io/2025/06/25/laravel.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/cutee.jpg" alt="profile picture" class="profile-picture">
+      <h1>home</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <nav>
+ 
+ <a href="/" >home</a>
+ 
+ <a href="/friends.html" >friends</a>
+ 
+ <a href="/blog.html" >blog</a>
+ 
+</nav>
+    </nav>
+
+    <main>
+      <h1>Laravel</h1>
+<p>25 Jun 2025 - </p>
+
+<p>Penjelasan tentang Laravel</p>
+
+<h2><img src="/assets/images/htmlgambar.png" alt="Single Menu" /></h2>
+
+<h1 id="laravel">Laravel</h1>
+<p>Berikut adalah panduan lengkap untuk mengenal dan memulai proyek menggunakan Laravel.</p>
+
+<hr />
+
+<h2 id="-apa-itu-laravel">🔍 Apa Itu Laravel?</h2>
+
+<p>Laravel merupakan framework berbasis PHP yang mengikuti pola <strong>MVC (Model-View-Controller)</strong>. Framework ini sangat populer karena menawarkan banyak fitur siap pakai, mulai dari routing, autentikasi, hingga manajemen database. Laravel memudahkan developer membuat aplikasi web dengan lebih terstruktur, aman, dan efisien.</p>
+
+<hr />
+
+<h2 id="️-keunggulan-laravel">⚒️ Keunggulan Laravel</h2>
+
+<p>✨ Sintaksis modern dan bersih<br />
+🔐 Keamanan tingkat tinggi dengan CSRF, bcrypt, dan middleware<br />
+📂 Struktur direktori yang tertata rapi<br />
+🧠 ORM Eloquent untuk interaksi database<br />
+⚙️ Artisan CLI untuk mempercepat pengembangan<br />
+📦 Routing, session, autentikasi, migrasi semua tersedia out-of-the-box</p>
+
+<hr />
+
+<h2 id="-persyaratan-sistem">💻 Persyaratan Sistem</h2>
+
+<p>Sebelum memulai instalasi Laravel, pastikan sistem kamu telah terpasang:</p>
+
+<ul>
+  <li>PHP versi 8.1 atau lebih baru</li>
+  <li>Composer (dependency manager PHP)</li>
+  <li>MySQL atau MariaDB</li>
+  <li>Web server seperti Apache (bisa via XAMPP atau Laragon)</li>
+  <li>Node.js &amp; NPM (untuk asset frontend jika menggunakan Breeze/Jetstream)</li>
+</ul>
+
+<hr />
+
+<h2 id="-instalasi-laravel">🚀 Instalasi Laravel</h2>
+
+<h3 id="langkah-1-buat-proyek-laravel">Langkah 1: Buat Proyek Laravel</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel form-siswa
+</code></pre></div></div>
+
+<p>📌 <em>Penjelasan:</em></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">composer</code> = alat untuk mengelola dependensi PHP</li>
+  <li><code class="language-plaintext highlighter-rouge">create-project</code> = membuat proyek baru</li>
+  <li><code class="language-plaintext highlighter-rouge">laravel/laravel</code> = nama paket Laravel</li>
+  <li><code class="language-plaintext highlighter-rouge">form-siswa</code> = nama folder proyek</li>
+</ul>
+
+<h3 id="langkah-2-masuk-ke-folder-proyek">Langkah 2: Masuk ke Folder Proyek</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>form-siswa
+</code></pre></div></div>
+
+<p>Untuk berpindah ke direktori proyek Laravel dan mulai menjalankan perintah Laravel di sana.</p>
+
+<h3 id="langkah-3-jalankan-server-lokal">Langkah 3: Jalankan Server Lokal</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan serve
+</code></pre></div></div>
+
+<p>Perintah ini akan memulai server Laravel lokal. Buka <code class="language-plaintext highlighter-rouge">http://127.0.0.1:8000</code> di browser untuk melihat aplikasimu.</p>
+
+<hr />
+
+<h2 id="️-konfigurasi-database-xampp">⚙️ Konfigurasi Database (XAMPP)</h2>
+
+<ol>
+  <li>Buka <code class="language-plaintext highlighter-rouge">http://localhost/phpmyadmin</code></li>
+  <li>Buat database baru: <code class="language-plaintext highlighter-rouge">db_siswa</code></li>
+  <li>Edit file <code class="language-plaintext highlighter-rouge">.env</code> pada proyek Laravel:</li>
+</ol>
+
+<pre><code class="language-env">DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_siswa
+DB_USERNAME=root
+DB_PASSWORD=
+</code></pre>
+
+<p>📌 <em>Catatan:</em> Kosongkan <code class="language-plaintext highlighter-rouge">DB_PASSWORD</code> jika password MySQL kamu masih default (kosong).</p>
+
+<hr />
+
+<h2 id="️-menjalankan-migrasi">🛠️ Menjalankan Migrasi</h2>
+
+<p>Setelah database dikonfigurasi, jalankan perintah berikut:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan migrate
+</code></pre></div></div>
+
+<p>Perintah ini akan membuat tabel-tabel awal di database (<code class="language-plaintext highlighter-rouge">users</code>, <code class="language-plaintext highlighter-rouge">password_resets</code>, dll) berdasarkan file migrasi di <code class="language-plaintext highlighter-rouge">database/migrations</code>.</p>
+
+<p>🧠 <em>Apa itu Migrasi?</em>
+Migrasi adalah fitur Laravel yang berfungsi untuk mendefinisikan struktur tabel secara terkode, sehingga bisa dipantau, diubah, atau dibagikan ke developer lain.</p>
+
+<hr />
+
+<h2 id="-install-breeze-autentikasi-sederhana">🔑 Install Breeze (Autentikasi Sederhana)</h2>
+
+<p>Jika ingin menambahkan fitur login-register:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer require laravel/breeze <span class="nt">--dev</span>
+php artisan breeze:install
+npm <span class="nb">install</span> <span class="o">&amp;&amp;</span> npm run dev
+php artisan migrate
+</code></pre></div></div>
+
+<p>🎯 <em>Fungsi Breeze:</em>
+Menyediakan sistem login/register lengkap dengan tampilan berbasis Tailwind dan Blade yang ringan.</p>
+
+<hr />
+
+<h2 id="-kesimpulan">📋 Kesimpulan</h2>
+
+<p>Laravel merupakan solusi modern bagi pengembangan web dengan PHP. Dengan bantuan tools seperti Artisan, migrasi, routing, dan Breeze, proses membangun aplikasi web — seperti <strong>form pendaftaran siswa</strong> — menjadi lebih cepat dan terstruktur.</p>
+
+<p>Setelah bagian ini, kamu bisa mulai membuat model, controller, view, dan form input siswa untuk membangun aplikasi pendaftaran siswa secara dinamis dan terhubung dengan database XAMPP.</p>
+
+<p>🚀 <em>Langkah selanjutnya:</em> Buat model <code class="language-plaintext highlighter-rouge">Siswa</code>, migrasi <code class="language-plaintext highlighter-rouge">siswas</code>, controller, dan halaman input/form HTML agar data bisa disimpan dan ditampilkan.</p>
+
+<hr />
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 home. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

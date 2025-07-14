@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XAMPP dan Laravel</title>
+
+  <!-- Stylesheet -->
+  <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+   <!-- <link rel="stylesheet" href="/assets/css/styles.css"> -->
+   <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>XAMPP dan Laravel | home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="XAMPP dan Laravel" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Penjelasan tentang Menghubungkan XAMPP dan Laravel" />
+<meta property="og:description" content="Penjelasan tentang Menghubungkan XAMPP dan Laravel" />
+<link rel="canonical" href="anandaaputrinabilla.github.io/2025/07/02/menghubungkan-xampp-dan-laravel.html" />
+<meta property="og:url" content="anandaaputrinabilla.github.io/2025/07/02/menghubungkan-xampp-dan-laravel.html" />
+<meta property="og:site_name" content="home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-07-02T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="XAMPP dan Laravel" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-07-02T00:00:00+00:00","datePublished":"2025-07-02T00:00:00+00:00","description":"Penjelasan tentang Menghubungkan XAMPP dan Laravel","headline":"XAMPP dan Laravel","mainEntityOfPage":{"@type":"WebPage","@id":"anandaaputrinabilla.github.io/2025/07/02/menghubungkan-xampp-dan-laravel.html"},"url":"anandaaputrinabilla.github.io/2025/07/02/menghubungkan-xampp-dan-laravel.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/images/cutee.jpg" alt="profile picture" class="profile-picture">
+      <h1>home</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <nav>
+ 
+ <a href="/" >home</a>
+ 
+ <a href="/friends.html" >friends</a>
+ 
+ <a href="/blog.html" >blog</a>
+ 
+</nav>
+    </nav>
+
+    <main>
+      <h1>XAMPP dan Laravel</h1>
+<p>02 Jul 2025 - </p>
+
+<p>Penjelasan tentang Menghubungkan XAMPP dan Laravel</p>
+
+<p><img src="/assets/images/htmlgambar.png" alt="Single Menu" /></p>
+
+<hr />
+
+<h1 id="-koneksi-laravel-ke-database-xampp-untuk-form-pendaftaran">🌐 Koneksi Laravel ke Database XAMPP untuk Form Pendaftaran</h1>
+
+<p>Tutorial ini menjelaskan cara menghubungkan Laravel dengan database MySQL yang berjalan di XAMPP, khususnya untuk aplikasi <strong>form pendaftaran siswa</strong>.</p>
+
+<hr />
+
+<h2 id="-langkah-1-pastikan-xampp-aktif">🔧 Langkah 1: Pastikan XAMPP Aktif</h2>
+
+<ol>
+  <li>Buka <strong>XAMPP Control Panel</strong></li>
+  <li>Aktifkan modul:
+    <ul>
+      <li>✅ <strong>Apache</strong></li>
+      <li>✅ <strong>MySQL</strong></li>
+    </ul>
+  </li>
+  <li>Buka browser → akses <code class="language-plaintext highlighter-rouge">http://localhost/phpmyadmin</code></li>
+</ol>
+
+<hr />
+
+<h2 id="️-langkah-2-buat-database-di-phpmyadmin">🛢️ Langkah 2: Buat Database di phpMyAdmin</h2>
+
+<ol>
+  <li>Masuk ke <code class="language-plaintext highlighter-rouge">http://localhost/phpmyadmin</code></li>
+  <li>Klik menu <strong>Database</strong></li>
+  <li>Buat database baru, misalnya: <code class="language-plaintext highlighter-rouge">db_siswa</code></li>
+</ol>
+
+<hr />
+
+<h2 id="️-langkah-3-konfigurasi-file-env-laravel">⚙️ Langkah 3: Konfigurasi File <code class="language-plaintext highlighter-rouge">.env</code> Laravel</h2>
+
+<p>Buka file <code class="language-plaintext highlighter-rouge">.env</code> di root folder project Laravel kamu (<code class="language-plaintext highlighter-rouge">latihvel/.env</code>) dan ubah bagian berikut:</p>
+
+<p>```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_siswa
+DB_USERNAME=root
+DB_PASSWORD=
+Keterangan:</p>
+
+<p>Key	Keterangan
+DB_CONNECTION	Tipe database, default mysql
+DB_HOST	Alamat server DB, default 127.0.0.1
+DB_PORT	Port MySQL, default 3306
+DB_DATABASE	Nama database yang tadi kamu buat
+DB_USERNAME	Username database, default root
+DB_PASSWORD	Password MySQL, biasanya kosong (default)</p>
+
+<p>📌 Pastikan database db_siswa sudah dibuat sebelum lanjut.</p>
+
+<p>🛠️ Langkah 4: Migrasi Struktur Tabel ke Database
+Laravel menggunakan fitur migration untuk membuat tabel secara otomatis dari file.</p>
+
+<p>Jalankan perintah:</p>
+
+<p>bash
+Copy
+Edit
+php artisan migrate
+🧠 Apa yang terjadi?</p>
+
+<p>Laravel membaca semua file migrasi di database/migrations</p>
+
+<p>Menjalankan perintah CREATE TABLE ke database db_siswa</p>
+
+<p>Tabel-tabel berikut akan dibuat secara otomatis:</p>
+
+<p>users</p>
+
+<p>password_resets</p>
+
+<p>personal_access_tokens</p>
+
+<p>dan lainnya jika kamu punya migrasi tambahan</p>
+
+<p>📥 Langkah 5: Isi Data Form ke Database
+Misalnya kamu memiliki form pendaftaran di file:</p>
+
+<p>bash
+Copy
+Edit
+resources/views/siswa/create.blade.php
+Dan sudah membuat model serta controller dengan perintah:</p>
+
+<p>bash
+Copy
+Edit
+php artisan make:model Siswa -mcr
+Kode untuk menyimpan data ke database (SiswaController.php):</p>
+
+<p>php
+Copy
+Edit
+public function store(Request $request)
+{
+    Siswa::create([
+        ‘nama’ =&gt; $request-&gt;nama,
+        ‘alamat’ =&gt; $request-&gt;alamat,
+        ‘agama’ =&gt; $request-&gt;agama,
+        ‘sekolah_asal’ =&gt; $request-&gt;sekolah_asal,
+        ‘jenis_kelamin’ =&gt; $request-&gt;jenis_kelamin,
+    ]);
+    return redirect()-&gt;route(‘siswa.index’);
+}
+Form HTML pada create.blade.php:</p>
+
+<p>blade
+Copy
+Edit</p>
+<form action="" method="POST">
+  @csrf
+  <input name="nama" placeholder="Nama" /><br />
+  <input name="alamat" placeholder="Alamat" /><br />
+  <input name="agama" placeholder="Agama" /><br />
+  <input name="sekolah_asal" placeholder="Sekolah Asal" /><br />
+  <select name="jenis_kelamin">
+    <option value="Laki-laki">Laki-laki</option>
+    <option value="Perempuan">Perempuan</option>
+  </select><br />
+  <button type="submit">Simpan</button>
+</form>
+<p>✅ Selesai! Coba Jalankan Aplikasi
+Jalankan Laravel:</p>
+
+<p>bash
+Copy
+Edit
+php artisan serve
+Buka browser dan akses:</p>
+
+<p>arduino
+Copy
+Edit
+http://127.0.0.1:8000/siswa/create
+Isi form → klik simpan → data akan tersimpan di database db_siswa</p>
+
+<p>🧠 Tips Tambahan
+Jalankan php artisan migrate:fresh untuk reset dan migrasi ulang</p>
+
+<p>Lihat data langsung via phpMyAdmin → tabel siswas</p>
+
+<p>Tambahkan validasi input di controller agar lebih aman</p>
+
+<p>Gunakan @csrf di setiap form untuk perlindungan CSRF</p>
+
+<p>📌 Struktur Folder View (Contoh)
+pgsql
+Copy
+Edit
+resources/views/
+├── siswa/
+│   ├── create.blade.php
+│   ├── edit.blade.php
+│   ├── index.blade.php
+│   └── dashboard.blade.php</p>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 home. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
